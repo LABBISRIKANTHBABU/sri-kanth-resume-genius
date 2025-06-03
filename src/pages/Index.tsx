@@ -122,7 +122,7 @@ const Index = () => {
             Sri Kanth Babu
           </h1>
           <h2 className="text-2xl md:text-3xl text-blue-300 mb-6 font-light print:text-xl print:text-gray-700 print:mb-4">
-            Aspiring AI Educator & Full Stack Developer
+            AI Content Developer & Full Stack Developer
           </h2>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto print:text-base print:text-gray-600 print:mb-4">
             B.Tech Student at G Pullareddy Engineering College | Expected 2026
