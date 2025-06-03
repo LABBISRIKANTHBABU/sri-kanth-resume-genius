@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Download, Code, Database, Cloud, Brain, Award, Calendar, ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -32,7 +31,7 @@ const Index = () => {
   };
 
   const handleLinkedinClick = () => {
-    window.open('https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile', '_blank');
+    window.open('https://www.linkedin.com/in/kanth-babu-sri', '_blank');
   };
 
   const skills = [
@@ -74,7 +73,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 print:bg-white">
       {/* Print Styles */}
-      <style jsx>{`
+      <style>
+        {`
         @media print {
           body { -webkit-print-color-adjust: exact; }
           .no-print { display: none !important; }
@@ -82,10 +82,11 @@ const Index = () => {
           .bg-gradient-to-br { background: white !important; }
           .text-white { color: black !important; }
           .text-gray-300 { color: #374151 !important; }
-          .bg-white\/10 { background: #f9fafb !important; border: 1px solid #e5e7eb !important; }
-          .border-white\/20 { border-color: #e5e7eb !important; }
+          .bg-white\\/10 { background: #f9fafb !important; border: 1px solid #e5e7eb !important; }
+          .border-white\\/20 { border-color: #e5e7eb !important; }
         }
-      `}</style>
+        `}
+      </style>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden print:min-h-0 print:py-8">
