@@ -48,25 +48,37 @@ const Index = () => {
       title: 'AI-Powered Automation Tool',
       description: 'Python-based browser automation agent with Playwright integration for automating repetitive tasks',
       skills: ['Python', 'Automation', 'API Integration', 'Playwright'],
-      gradient: 'from-blue-500 to-purple-600'
+      gradient: 'from-blue-500 to-purple-600',
+      youtubeLink: 'https://www.youtube.com/watch?v=fmVeBrEgRd4',
+      githubLink: null,
+      liveLink: null
     },
     {
       title: 'Data Analytics with Power BI',
       description: 'End-to-end analytics project transforming raw data into business insights with interactive visualizations',
       skills: ['Power BI', 'Python', 'Pandas', 'Data Visualization', 'Excel'],
-      gradient: 'from-green-500 to-blue-600'
+      gradient: 'from-green-500 to-blue-600',
+      youtubeLink: null,
+      githubLink: 'https://github.com/LABBISRIKANTHBABU/Power-BI',
+      liveLink: null
     },
     {
       title: 'Full-Stack MERN Application',
       description: 'Secure, responsive web application with robust authentication and cross-platform compatibility',
       skills: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Authentication'],
-      gradient: 'from-purple-500 to-pink-600'
+      gradient: 'from-purple-500 to-pink-600',
+      youtubeLink: null,
+      githubLink: 'https://github.com/LABBISRIKANTHBABU/Internship_Projects',
+      liveLink: null
     },
     {
       title: 'Weather Application',
       description: 'Real-time weather app with dynamic UI, day/night mode toggle and API integration',
       skills: ['React.js', 'API Integration', 'Responsive Design', 'JavaScript'],
-      gradient: 'from-orange-500 to-red-600'
+      gradient: 'from-orange-500 to-red-600',
+      youtubeLink: null,
+      githubLink: null,
+      liveLink: 'https://famous-mousse-58b849.netlify.app/'
     }
   ];
 
@@ -293,12 +305,51 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="print:pt-0">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.skills.map(skill => (
                       <Badge key={skill} variant="outline" className="border-white/30 text-white hover:bg-white/10 transition-colors print:border-gray-400 print:text-gray-700">
                         {skill}
                       </Badge>
                     ))}
+                  </div>
+                  <div className="flex gap-3 print:gap-2">
+                    {project.githubLink && (
+                      <Button
+                        onClick={() => window.open(project.githubLink, '_blank')}
+                        variant="outline"
+                        size="sm"
+                        className="bg-white/10 border-white/30 text-white hover:bg-white/20 print:bg-gray-100 print:border-gray-300 print:text-gray-700"
+                      >
+                        <Github className="w-3 h-3 mr-1" />
+                        Code
+                        <ExternalLink className="w-2 h-2 ml-1" />
+                      </Button>
+                    )}
+                    {project.youtubeLink && (
+                      <Button
+                        onClick={() => window.open(project.youtubeLink, '_blank')}
+                        variant="outline"
+                        size="sm"
+                        className="bg-red-600/20 border-red-500/30 text-red-300 hover:bg-red-600/30 print:bg-red-50 print:border-red-300 print:text-red-700"
+                      >
+                        <svg className="w-3 h-3 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        Demo
+                        <ExternalLink className="w-2 h-2 ml-1" />
+                      </Button>
+                    )}
+                    {project.liveLink && (
+                      <Button
+                        onClick={() => window.open(project.liveLink, '_blank')}
+                        variant="outline"
+                        size="sm"
+                        className="bg-green-600/20 border-green-500/30 text-green-300 hover:bg-green-600/30 print:bg-green-50 print:border-green-300 print:text-green-700"
+                      >
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        Live
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -372,6 +423,7 @@ const Index = () => {
             onClick={handleEmailClick}
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-3 transition-all duration-300 hover:scale-105"
           >
+            <Mail className="w-5 h-5 mr-2" />
             Get In Touch
           </Button>
         </div>
