@@ -77,7 +77,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <Button 
             onClick={onEmailClick}
             variant="outline" 
-            className="glass-hover text-white hover:scale-105 print:bg-white print:border-gray-300 print:text-black print:hover:bg-gray-50 group"
+            className="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 print:bg-white print:border-gray-300 print:text-black print:hover:bg-gray-50 group"
           >
             <Mail className="w-4 h-4 mr-2 group-hover:animate-pulse" />
             kanthbabusri@gmail.com
@@ -85,14 +85,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <Button 
             onClick={onPhoneClick}
             variant="outline" 
-            className="glass-hover text-white hover:scale-105 print:bg-white print:border-gray-300 print:text-black print:hover:bg-gray-50 group"
+            className="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 print:bg-white print:border-gray-300 print:text-black print:hover:bg-gray-50 group"
           >
             <Phone className="w-4 h-4 mr-2 group-hover:animate-pulse" />
             +91 7075841474
           </Button>
           <Button 
             variant="outline" 
-            className="glass-hover text-white print:bg-white print:border-gray-300 print:text-black"
+            className="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 transition-all duration-300 print:bg-white print:border-gray-300 print:text-black"
           >
             <MapPin className="w-4 h-4 mr-2" />
             Kurnool, AP
@@ -103,7 +103,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="flex justify-center gap-4 animate-fade-in animation-delay-600 print:gap-2">
           <Button 
             onClick={onGithubClick}
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-glow print:bg-gray-800 print:text-white group"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-glow print:bg-gray-800 print:text-white group shadow-lg"
           >
             <Github className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
             GitHub
@@ -111,7 +111,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </Button>
           <Button 
             onClick={onLinkedinClick}
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105 hover:shadow-glow print:bg-blue-600 print:text-white group"
+            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105 hover:shadow-glow print:bg-blue-600 print:text-white group shadow-lg"
           >
             <Linkedin className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
             LinkedIn
@@ -120,7 +120,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <Button 
             onClick={onDownloadCV}
             variant="outline" 
-            className="glass-hover text-white hover:scale-105 no-print print:hidden group"
+            className="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 no-print print:hidden group"
           >
             <Download className="w-4 h-4 mr-2 group-hover:translate-y-1 transition-transform" />
             Download CV
